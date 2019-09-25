@@ -1,0 +1,278 @@
+
+/*
+Theme Name: Wepayout
+Theme URI: http://Wepayout.com.br
+Author: Handgran - Hudson Carolino
+Author URI: http://handgran.com.br;
+Description: Descrção do thema.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Wepayout
+Tags: Modelo, Maquiagem, Fotos, Portfólio, Preto.
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (handgran Framework v1)
+--------------------------------------------
+**** VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** COPYRIGHT
+**** ESTILOS GERAIS PARA AS PÁGINAS
+**** PÁGINAS
+**** EXTRAS
+**** @MEDIA
+*/
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+    margin:0;
+  }
+  h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding:0;
+  }
+  .containerFull{
+    width: 100%;
+    max-width: 1204px;
+    margin: 0 auto;
+  }
+  .travaScroll{
+    overflow: hidden;
+  }
+
+ 
+  /*VARIÁVEIS*/
+    :root{
+      --hand_OpenSans:'Open Sans', sans-serif;
+      --hand_Syncopate:'Syncopate', sans-serif;
+    }
+
+/*BODY*/
+  body{
+    font-family: var(--hand_OpenSans);
+  }
+
+/*TOPO*/
+  header{
+    background:#000000;
+    min-height: 95px;
+    padding: 30px 0 0;
+
+  }
+    header button{
+      border: solid 1px #fff;
+      background-color: #000;
+      outline: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      padding: 0 7px;
+      display: none;
+    }
+      header button span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      header button img{
+        display: block;
+        width: 25px;
+      }
+    header figure{
+    
+    }
+      header figure img{
+    
+      }
+    header nav{
+    
+    }
+      header nav ul{
+        text-align: right;
+      }
+        header nav ul li{
+          display: inline-block;
+        }
+          header nav ul li a{
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0px 15px;
+            font-size: 17px;
+            font-weight: 100;
+          }
+          header nav ul li a:hover{
+            color:#fff;
+          }
+/*RODAPÉ*/
+  footer{
+    text-align: center;
+    padding: 30px;
+  }
+    footer figure{
+    
+    }
+      footer figure img{
+        display: block;
+        margin:0 auto 10px;
+      }
+    footer p{
+     color: #9b9696;
+     font-size: 13px;
+    }
+      footer p a{
+        color: #9b9696;
+        text-decoration: underline;
+      }
+/*HOME*/
+  .pg-home{
+    min-height: 100vh;
+  }
+    .pg-home section{
+      padding-top: 70px;
+    }
+      .pg-home section h2{
+        text-transform: uppercase;
+        color: #000;
+        font-size:35px;
+        font-weight: bold;
+      }
+      .pg-home section ul{
+        text-align: center;
+        padding-top: 100px;
+      }
+        .pg-home section ul li{
+          width: 100%;
+          max-width: 23.1%;
+          height: 140px;
+          border: solid 1px;
+          border-radius: 5px;
+          display: inline-block;
+          margin: 10px;
+          position: relative;
+        }
+          .pg-home section ul li a{
+            display: block;
+            width: 100%;
+            padding: 45px 35px 0;
+            height: 140px;
+          }
+            .pg-home section ul li a figure{
+      
+            }
+              .pg-home section ul li a figure img{
+                display: block;
+                max-width: 70%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              .pg-home section ul li a figure figcaption{
+                display: none;
+              }
+/*COPYRIGHT*/
+/*ESTILOS GERAIS PARA AS PÁGINAS*/
+  ::-webkit-scrollbar{ 
+    background: #000;
+    width: 7px;
+  }
+
+  /*::-webkit-scrollbar-button{ 
+   background: #2178a3;
+  }*/
+  ::-webkit-scrollbar-thumb{ 
+    background: #fff;
+  }
+
+/*EXTRAS*/
+/*@MEDIA*/
+  @media(max-width: 1250px){
+    .containerFull{
+      padding: 30px;
+    }
+    .pg-home section ul li {
+      max-width: 31.1%;
+    }
+  }
+  @media(max-width: 1080px){
+    .pg-home section ul li {
+        max-width: 30.1%;
+    }
+  } 
+  @media(max-width:768px){
+    header button{
+      display: block;
+      z-index: 1;
+    }
+    .pg-home section ul li {
+      max-width: 46.1%;
+    }
+    .pg-home section h2{
+      text-align: center;
+    }
+    .pg-home section {
+      padding-top: 10px;
+    }
+    .pg-home section ul {
+      padding-top: 10px;
+    }
+  
+    header{
+      min-height: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header nav {
+      position: fixed;
+      background: #000000c2;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      z-index: 999;
+      transition: 1s;
+    }
+    header nav.openNavMenu{
+      left: 0;
+      transition: 1s;
+    }
+    header nav ul{
+      text-align: left;
+      padding-top: 30px;
+    }
+    header nav ul li {
+      display: block;
+      padding: 10px 0;
+    }
+
+  }
+  @media(max-width:635px){
+    .pg-home section ul li {
+      max-width: 45.1%;
+    }
+  }
+  @media(max-width:520px){
+   .pg-home section ul li {
+      max-width: 44.1%;
+    }
+  }
+  @media(max-width:447px){
+   .pg-home section ul li {
+     max-width: 100%;
+     margin: 10px 0;
+    }
+  }
