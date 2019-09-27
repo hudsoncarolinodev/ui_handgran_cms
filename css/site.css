@@ -38,21 +38,14 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
     margin: 0;
     padding:0;
   }
-  .containerFull{
-    width: 100%;
-    max-width: 1204px;
-    margin: 0 auto;
-  }
-  .travaScroll{
-    overflow: hidden;
-  }
+  
 
  
-  /*VARIÁVEIS*/
-    :root{
-      --hand_OpenSans:'Open Sans', sans-serif;
-      --hand_Syncopate:'Syncopate', sans-serif;
-    }
+/*VARIÁVEIS*/
+  :root{
+    --hand_OpenSans:'Open Sans', sans-serif;
+    --hand_Syncopate:'Syncopate', sans-serif;
+  }
 
 /*BODY*/
   body{
@@ -116,6 +109,7 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
           header nav ul li a:hover{
             color:#fff;
           }
+
 /*RODAPÉ*/
   footer{
     text-align: center;
@@ -136,6 +130,7 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
         color: #9b9696;
         text-decoration: underline;
       }
+
 /*HOME*/
   .pg-home{
     min-height: 100vh;
@@ -184,7 +179,256 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
               .pg-home section ul li a figure figcaption{
                 display: none;
               }
+
+/*CADASTRO*/
+  .sectionForm{
+
+  }
+    .sectionForm .form{
+      max-width: 550px;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+    .sectionForm .form .hand-title-form{
+      font-size: 17px;
+      color: #000;
+      padding-bottom: 25px;
+    } 
+    .sectionForm .form .form_box span{
+      font-weight: 700;
+      font-size: 15px;
+      color: #000;
+    } 
+    .sectionForm .form .hand-obs{
+      font-style: italic;
+      font-size: 12px;
+      color: #000;
+    }
+      .sectionForm .form .hand-obs a{
+        text-decoration: underline;
+        color: #000;
+      }
+    .sectionForm .form .hand-text{
+      font-size: 16px;
+      color: #000;
+    }
+      .sectionForm .form .form_box{
+        padding-bottom: 20px;
+      }
+        .sectionForm .form .form_box .input_type{
+        }
+        .sectionForm .form .form_box .row{
+    
+        }
+          .sectionForm .form .form_box .row .col-sm-8{
+      
+          }
+            .sectionForm .form .input_type{
+              padding: 5px;
+            }
+              .sectionForm .form  .input_type label{
+                color: #000;
+                font-weight: 500;
+                font-size: 14px;
+              }
+              .sectionForm .form  .input_type.labelFormat label{
+                color: #000;
+                font-weight: bold;
+                font-size: 14px;
+              }
+              .sectionForm .form  .input_type input[type="text"]{
+                display: block;
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                border: solid 1px #ccc;
+                padding: 10px;
+                outline: none;
+              }
+              .sectionForm .form .input_type textarea{
+                outline: none;
+                border-radius: 5px;
+                border: solid 1px #ccc;
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                height: 90px;
+              }
+              .sectionForm .form  .input_type select{
+                display: block;
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                border: solid 1px #ccc;
+                padding: 10px;
+                outline: none;
+              }
+              .sectionForm .form  .input_type .type_Radio{
+              }  
+              .sectionForm .form  .input_type.type_Radio input[type="radio"]{
+              }
+              .sectionForm .form  .input_type.type_Radio label{
+               color: #7f7f7f;
+               position: relative;
+               padding-left: 10px;
+               cursor: pointer;
+              }
+              .sectionForm .form  .input_type.type_Radio label:before{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                border: solid 1px #7f7f7f;
+                border-radius: 5px;
+                background-color: #fff;
+                position: absolute;
+                left: -22px;
+              }
+              .sectionForm .form  .input_type.type_Radio input[type="radio"]:checked ~ label{
+                color: #000;
+              } 
+              .sectionForm .form  .input_type.type_Radio input[type="radio"]:checked ~ label:before{
+                background-image:url(../img/tick.png);
+                background-position:center;
+                background-repeat: no-repeat; 
+                border: solid 1px #000;
+              }
+/*CLIENTE*/
+  .pg-cliente{
+
+  }
+
+    .pg-cliente .containerFull>.row{
+      padding: 50px 0;
+    }
+      .pg-cliente .containerFull>.row figure{
+
+      }
+        .pg-cliente .containerFull>.row figure img{
+          display: block;
+          width: 100%;
+          max-width: 200px;
+          height: auto;
+        }
+    .pg-cliente .containerFull nav{
+
+    }
+      .pg-cliente .containerFull nav .col-sm-7{
+        text-align: right;
+      }
+        .pg-cliente .containerFull nav .col-sm-7 span{
+          display: block;
+          padding: 17px 0 0;
+          text-transform: uppercase;
+          font-size: 16px;
+        }
+          .pg-cliente .containerFull nav .col-sm-7 span strong{
+            padding: 0 15px;
+          }
+        .pg-cliente .containerFull nav .col-sm-5 .formSerarch{
+          width: 100%;
+          float: right;
+          max-width: 260px;
+          position: relative;
+         }
+          .pg-cliente .containerFull nav .col-sm-5 input[type="text"]{
+            height: 52px;
+            border-radius: 5px;
+            border: solid 1px #000;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            outline: none;
+          }
+          .pg-cliente .containerFull nav .col-sm-5 input[type="submit"]{
+            background-image: url(../img/search.png);
+            background-color: transparent;
+            color: transparent;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            background-position: 6px 15px;
+            outline: none;
+            background-repeat: no-repeat;
+          }
+
+    .pg-cliente{
+
+    }
+      .pg-cliente section{
+        border: solid 1px;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        position: relative;
+      } 
+        .pg-cliente section.hand-title{
+          border: none;
+        } 
+        .pg-cliente section .row{
+         
+        }
+          .pg-cliente section .row .col-md-4{
+
+          }
+            .pg-cliente section .row .col-md-4 .input_edit{
+              max-width: 49%;
+              width: 100%;
+              display: inline-block;
+            }
+              .pg-cliente section .row .col-md-4 strong{
+                color: #000;
+                font-size: 18px;
+              }
+              .pg-cliente section .row .input_edit.input_edit1{
+                max-width: 30%;
+              }
+              .pg-cliente section .row .input_edit.input_edit2{
+                max-width: 60%;
+              }
+              .pg-cliente section .row .input_edit.input_edit3{
+              }
+              .pg-cliente section .row .input_edit.input_edit4{
+              
+              }
+              .pg-cliente section .row .input_edit.input_edit5{
+               
+              }
+                .pg-cliente section .row .input_edit.input_edit5 input{
+                  text-align: center;
+                }
+              .pg-cliente section .row .input_edit input{
+                width: 100%;
+                display: block;
+                border: none;
+                outline: none;
+              }
+          .pg-cliente section  button{
+            background-color: transparent;
+            border: none;
+            background-image: url(../img/edit.png);
+            width: 50px;
+            height: 100%;
+            position: absolute;
+            right: 0px;
+            background-repeat: no-repeat;
+            top: 0;
+            background-position: 15px 13px;
+            outline: none;
+            cursor: pointer;
+            z-index: 9;
+          }
+
+/*BRIEFING*/
+  .pg-briefing{
+
+  }
+
+
 /*COPYRIGHT*/
+
 /*ESTILOS GERAIS PARA AS PÁGINAS*/
   ::-webkit-scrollbar{ 
     background: #000;
@@ -197,8 +441,31 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
   ::-webkit-scrollbar-thumb{ 
     background: #fff;
   }
+  .hand-template-mobile{
+    display: none;
+  }
+  .containerFull{
+    width: 100%;
+    max-width: 1204px;
+    margin: 0 auto;
+  }
+  .containerLarge{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .travaScroll{
+    overflow: hidden;
+  }
+  h2.hand-title-page{
+    font-weight: bold;
+    color: #000;
+    font-size: 35px;
+    padding-top: 70px;
+  }
 
 /*EXTRAS*/
+
 /*@MEDIA*/
   @media(max-width: 1250px){
     .containerFull{
@@ -213,6 +480,31 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
         max-width: 30.1%;
     }
   } 
+  @media(max-width: 991px){
+    .hand-template-desktop{
+      display: none;
+    }
+    .hand-template-mobile{
+      display: block;
+    }
+    .pg-cliente section .row .input_edit.input_edit5 input{
+      text-align: left;
+    }
+    .pg-cliente section .row .col-md-4 .input_edit{
+      width: 100%;
+      max-width: 100%;
+    }
+    .pg-cliente .containerFull nav .col-sm-7{
+      text-align: left;
+    }
+    .pg-cliente .containerFull nav .col-sm-5 .formSerarch{
+      float: initial;
+       max-width: 100%;
+    }
+    .pg-cliente .containerFull>.row{
+      padding: 15px 0;
+    }
+  }
   @media(max-width:768px){
     header button{
       display: block;
@@ -230,6 +522,7 @@ ESTRUTURAÇÃO BASE (handgran Framework v1)
     .pg-home section ul {
       padding-top: 10px;
     }
+  
   
     header{
       min-height: 0;
